@@ -1,0 +1,9 @@
+services:
+  maxhax:
+    image: mbigras/maxhax
+    restart: always
+  cloudflared:
+    image: cloudflare/cloudflared:1332-8a9f076a26f7
+    command: tunnel --no-autoupdate run --token $CLOUDFLARED_TOKEN
+    env_file: .env
+    restart: always
