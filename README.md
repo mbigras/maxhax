@@ -47,22 +47,22 @@ The following procedure describes how to build and publish mbigras/maxhax Docker
 
 1. Build mbigras/maxhax Docker image—tag based on git commit.
 
-```
-docker build -t mbigras/maxhax:$(git rev-parse HEAD) .
-```
+   ```
+   docker build -t mbigras/maxhax:$(git rev-parse HEAD) .
+   ```
 
 1. Tag latest image.
 
-```
-docker tag mbigras/maxhax:$(git rev-parse HEAD) mbigras/maxhax:latest
-```
+   ```
+   docker tag mbigras/maxhax:$(git rev-parse HEAD) mbigras/maxhax:latest
+   ```
 
 1. Push images.
 
-```
-docker push mbigras/maxhax:$(git rev-parse HEAD)
-docker push mbigras/maxhax:latest
-```
+   ```
+   docker push mbigras/maxhax:$(git rev-parse HEAD)
+   docker push mbigras/maxhax:latest
+   ```
 
 ## Deployment
 
