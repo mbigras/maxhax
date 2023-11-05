@@ -1,6 +1,6 @@
 services:
   maxhax:
-    image: mbigras/maxhax:ddc2d8eb4874780d5f88491a68c8ed7edcf4760b
+    image: mbigras/maxhax:7f68da17200cb71e19b039bf1c16a28ee0e46d9c
     restart: always
   cloudflared:
     image: cloudflare/cloudflared:1332-8a9f076a26f7
